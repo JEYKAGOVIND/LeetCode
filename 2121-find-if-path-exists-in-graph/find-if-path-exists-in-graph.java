@@ -3,7 +3,7 @@ class Solution {
         Map<Integer, List<Integer>> graph = new HashMap<>();
         for (int[] edge : edges) {
             int u = edge[0];
-            int v = edge[1];
+            int v =edge[1];
             graph.computeIfAbsent(u, k -> new ArrayList<>()).add(v);
             graph.computeIfAbsent(v, k -> new ArrayList<>()).add(u);
         }
